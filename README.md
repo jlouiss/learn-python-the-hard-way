@@ -1,4 +1,4 @@
-#[learn-python-the-hard-way](http://learnpythonthehardway.org/book)
+#[Learn Python The Hard Way](http://learnpythonthehardway.org/book)
 
 ##Notes
 
