@@ -1,7 +1,6 @@
 # Notes on [Learn Python The Hard Way](http://learnpythonthehardway.org/book)
 
 
-
 ### Ex. 7 - *More Printing*
 
 ```python
@@ -12,7 +11,7 @@ will print out
 
 `%r` will display *raw* data, `%r` is best for debugging.
 
-
+---
 
 ### Ex. 10 - *What Was That?*
 
@@ -31,14 +30,14 @@ Escape       | What it does
 `\uxxxx`     | 16-bit hex value xxxx (Unicode)
 `\uxxxxxxxx` | 32-bit hex value xxxx (Unicode)
 
-
+---
 
 ### Ex. 11 - *Asking Questions*
 
 `input()` function will try to convert things you enter as if they were Python code.
 `raw_input()` is *safer* than `input()`
 
-
+---
 
 ### Ex. 12 - *Prompting People*
 
@@ -48,7 +47,7 @@ For example, running
 `$ pydoc sys`
 will display documentation on the sys module
 
-
+---
 
 ### Ex. 13 - *Parameters, Unpacking, Variables*
 
@@ -58,6 +57,6 @@ script, first, second, third = argv
 ```
 `argv` *holds* the arguments you pass to your Python script when you run it.
 
-
+---
 
 ### Ex. 16 - *Reading and Writing Files*
