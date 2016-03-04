@@ -2,7 +2,7 @@
 
 
 
-## Ex. 7 - *More Printing*
+### Ex. 7 - *More Printing*
 
 ```python
 print 'This is an %r' % 'example'
@@ -14,9 +14,9 @@ will print out
 
 
 
-## Ex. 10 - *What Was That?*
+### Ex. 10 - *What Was That?*
 
-#### **Escape Sequences**
+##### **Escape Sequences**
 Escape       | What it does
 ------------ | ------------------------------
 `\a`         | ASCII bell (BEL)
@@ -33,14 +33,14 @@ Escape       | What it does
 
 
 
-## Ex. 11 - *Asking Questions*
+### Ex. 11 - *Asking Questions*
 
 `input()` function will try to convert things you enter as if they were Python code.
 `raw_input()` is *safer* than `input()`
 
 
 
-## Ex. 12 - *Prompting People*
+### Ex. 12 - *Prompting People*
 
 The built-in function `help()` invokes the online help system in the interactive interpreter, which uses pydoc to generate its documentation as text on the console.
 The same text documentation can also be viewed from **outside** the Python interpreter by running `pydoc` as a script at the operating system’s command prompt.
@@ -50,7 +50,7 @@ will display documentation on the sys module
 
 
 
-## Ex. 13 - *Parameters, Unpacking, Variables*
+### Ex. 13 - *Parameters, Unpacking, Variables*
 
 ```python
 from sys import argv
@@ -60,4 +60,4 @@ script, first, second, third = argv
 
 
 
-## Ex. 16 - *Reading and Writing Files*
+### Ex. 16 - *Reading and Writing Files*
