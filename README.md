@@ -66,8 +66,8 @@ script, first, second, third = argv
 `handle.write('something')` writes `something` to a file
 
 `open(name[, mode])` opens a file
-    * Modes:
-        - `r` read (default when mode is omitted)
-        - `w` write (truncates if file exists)
-        - `a` append
-        - `r+`, `w+`, `a+` open a file for updating (read and write). `w+` truncates the file.
+  * Modes:
+    - `r` read (default when mode is omitted)
+    - `w` write (truncates if file exists)
+    - `a` append
+    - `r+`, `w+`, `a+` open a file for updating (read and write). `w+` truncates the file.
