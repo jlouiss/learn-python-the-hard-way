@@ -71,3 +71,14 @@ script, first, second, third = argv
     - `w` write (truncates if file exists)
     - `a` append
     - `r+`, `w+`, `a+` open a file for updating (read and write). `w+` truncates the file.
+
+---
+
+### Ex. 18 - *Names, Variables, Code, Functions*
+
+```python
+def print_two(*args):
+    arg1, arg2 = args
+    print 'arg1: %r, arg2: %r' % (arg1, arg2)
+```
+The `*` before `args` tells python to take *all* the arguments to the function ant then put them in `args` as a list.
