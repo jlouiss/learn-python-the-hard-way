@@ -17,7 +17,7 @@ will print out
 
 ##### **Escape Sequences**
 Escape       | What it does
------------- | ------------------------------
+------------ | -------------------------------
 `\a`         | ASCII bell (BEL)
 `\b`         | ASCII backspace (BS)
 `\f`         | ASCII formfeed (FF)
@@ -82,3 +82,19 @@ def print_two(*args):
     print 'arg1: %r, arg2: %r' % (arg1, arg2)
 ```
 The `*` before `args` tells python to take *all* the arguments to the function ant then put them in `args` as a list.
+
+---
+
+### Ex. 20 - *Functions and Files*
+
+`handle.seek(offset[, from_what])` changes the file object's position.
+The position is computed from adding offset to a reference point.
+from_what      | reference point
+-------------- | -----------------
+`0` \| omitted | beginning of file
+`1`            | current position
+`2`            | end of file
+
+`handle.readline()` scans each byte of the file until finding a `\n` character, then returns what it found.
+
+The file handle (`handle`) keeps the current position in the file.
