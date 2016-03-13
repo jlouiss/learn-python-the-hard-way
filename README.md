@@ -98,3 +98,30 @@ from_what      | reference point
 `handle.readline()` scans each byte of the file until finding a `\n` character, then returns what it found.
 
 The file handle (`handle`) keeps the current position in the file.
+
+---
+
+### Ex. 25 - *Even more practice*
+
+The command
+```python
+help(module_name)
+```
+Executed in the python interpreter (**requires import statement before executing it**) produces:
+```
+NAME
+    module_name
+
+FILE
+    path/to/file/module_name.py
+
+FUNCTIONS
+    function_name(arguments)
+        Function's documentation comments
+
+    function_name(arguments)
+        Function's documentation comments
+
+    function_name(arguments)
+        Function's documentation comments
+```
