@@ -89,6 +89,7 @@ The `*` before `args` tells python to take *all* the arguments to the function a
 
 `handle.seek(offset[, from_what])` changes the file object's position.
 The position is computed from adding offset to a reference point.
+
 from_what      | reference point
 -------------- | -----------------
 `0` \| omitted | beginning of file
