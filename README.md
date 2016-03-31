@@ -126,3 +126,55 @@ FUNCTIONS
     function_name(arguments)
         Function's documentation comments
 ```
+
+---
+
+### Ex. 37 - *Symbol Review*
+
+**Keywords**
+
+Keyword   |               Description                 | Example
+--------- | :---------------------------------------: | ------------------------------
+`assert`  | Assert (ensure) that something is true    | `assert False, "Error!"`
+`class`   | Define a class                            | `class Person(object)`
+`del`     | Delete from dictionary                    | `del X[Y]`
+`exec`    | Run a string as Python                    | `exec 'print "hello"'`
+`finally` | Exceptions or not, finally do this        | `finally: pass`
+`from`    | Importing specific parts of a module      | `import X from Y`
+`global`  | Declare that you want a global variable   | `global X`
+`is`      | Like `==` to test equality                | `1 is 1 == True`
+`lambda`  | Create a short anonymous function         | `s = lambda y: y ** y; s(3)`
+`pass`    | This block is empty                       | `def empty(): pass`
+`raise`   | Raise an exception when things go wrong   | `raise ValueError("No")`
+`try`     | Try this block, if exception go to except | `try: pass`
+`yield`   | Pause here and return to caller.          | `def X(): yield Y; X().next()`
+
+
+**String Formats**
+
+Escape   |              Description              | Example
+-------- | :-----------------------------------: | ---------------------------------
+`%d`     | Decimal integers (not floating point) | `"%d" % 45 == '45'`
+`%i`     | Same as %d                            | `"%i" % 45 == '45'`
+`%o`     | Octal number                          | `"%o" % 1000 == '1750'`
+`%u`     | Unsigned decimal                      | `"%u" % -1000 == '-1000'`
+`%x`     | Hexadecimal lowercase                 | `"%x" % 1000 == '3e8'`
+`%X`     | Hexadecimal uppercase                 | `"%X" % 1000 == '3E8'`
+`%e`     | Exponential notation, lowercase 'e'   | `"%e" % 1000 == '1.000000e+03'`
+`%E`     | Exponential notation, uppercase 'E'   | `"%E" % 1000 == '1.000000E+03'`
+`%f`     | Floating point real number            | `"%f" % 10.34 == '10.340000'`
+`%F`     | Same as %f                            | `"%F" % 10.34 == '10.340000'`
+`%g`     | Either %f or %e, whichever is shorter | `"%g" % 10.34 == '10.34'`
+`%G`     | Same as %g but uppercase              | `"%G" % 10.34 == '10.34'`
+`%c`     | Character format                      | `"%c" % 34 == '"'`
+`%r`     | Repr format (debugging format)        | `"%r" % int == "<type 'int'>"`
+`%s`     | String format                         | `"%s there" % 'hi' == 'hi there'`
+`%%`     | A percent sign                        | `"%g%%" % 10.34 == '10.34%'`
+
+
+**Operators**
+
+Operator |   Description   | Example
+-------- | :-------------: | ----------------------
+`//`     | Floor division  | `2 // 4.0 == 0.0`
+`@`      | Decorator       | `@classmethod`
