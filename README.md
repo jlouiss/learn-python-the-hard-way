@@ -178,3 +178,22 @@ Operator |   Description   | Example
 -------- | :-------------: | ----------------------
 `//`     | Floor division  | `2 // 4.0 == 0.0`
 `@`      | Decorator       | `@classmethod`
+
+---
+
+### Exercise 42: Is-A, Has-A, Objects, and Classes
+
+`super(type[, object-or-type])`
+In a class hierarchy with single inheritance, `super` can be user to refer to the parent class without naming them explicitly.
+```python
+class Person(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Coder(Person):
+    def __init__(self, name):
+        ## Calls __init__ method from class Person
+        super(B, self).__init__(name)
+        ...
+```
