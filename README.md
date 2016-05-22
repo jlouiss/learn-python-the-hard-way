@@ -193,7 +193,13 @@ class Person(object):
 
 class Coder(Person):
     def __init__(self, name):
-        ## Calls __init__ method from class Person
-        super(B, self).__init__(name)
+        ## Calls __init__ method from parent class Person
+        super(Coder, self).__init__(name)
         ...
 ```
+
+---
+
+### Exercise 44: Inheritance Versus Composition
+
+**Most of the uses of inheritance can be simplified or replaced with composition, and multiple inheritance should be avoided at all costs.**
