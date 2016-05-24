@@ -204,4 +204,45 @@ class Coder(Person):
 
 **Most of the uses of inheritance can be simplified or replaced with composition, and multiple inheritance should be avoided at all costs.**
 
-The most common
+
+The most common and usually only use of `super()` is in `__init__` functions in base classes where you need to do something in a child class before completing the initialization in the parent.
+e.g.:
+```python
+class Child(Parent):
+
+    def __init__(self, stuff):
+        self.stuff = stuff
+        super(Child, self).__init__()
+```
+
+
+An alternative to *inheritance* is *composition*, which implies the use of other classes and modules.
+e.g.:
+```python
+# Could(should) be written in another file
+class aModule(object):
+
+    def doSomething(self):
+        pass
+
+    def doSomethingElse(self):
+        pass
+
+
+# There's no parent here since we're not using inheritance
+class Child(object):
+
+    def __init__(self):
+        pass
+
+    def doSomething(self):
+        # using aModule here
+        self.aModule.doSomething()
+
+    ...
+```
+
+#### Avoid multiple inheritance at all costs.
+It's too complex to be reliable.
+Use composition to package code into modules to better organize your code.
+Use inheritance only when there are clearly related reusable pieces of code that fit under a single common concept.
