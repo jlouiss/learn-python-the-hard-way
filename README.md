@@ -184,7 +184,7 @@ Operator |   Description   | Example
 ### Exercise 42: Is-A, Has-A, Objects, and Classes
 
 `super(type[, object-or-type])`
-In a class hierarchy with single inheritance, `super` can be user to refer to the parent class without naming them explicitly.
+In a class hierarchy with single inheritance, `super` can be user to refer to the parent class without naming them explicitly. Works also with multiple inheritance.
 ```python
 class Person(object):
     def __init__(self, name):
@@ -203,3 +203,5 @@ class Coder(Person):
 ### Exercise 44: Inheritance Versus Composition
 
 **Most of the uses of inheritance can be simplified or replaced with composition, and multiple inheritance should be avoided at all costs.**
+
+The most common
